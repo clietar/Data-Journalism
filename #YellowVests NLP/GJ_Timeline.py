@@ -59,5 +59,4 @@ layout.update(xaxis =dict(title='Date',range=[df.Day[0], df.Day[len(df)-1]], aut
               yaxis =dict(title='Number of participants',range=[min(FG)-0.5, max(LNJ)+0.5], autorange=False))
 fig = go.Figure(data=[FrenchGovernment, LeNombreJaune], frames=frames, layout=layout)
 fig.update_layout(title_text="The fall of yellow vests movement")
-py.sign_in('spiderweb','meN8XQSk6p9SwNrAC740')
 py.iplot(fig, filename='YellowVests_Timeline')
