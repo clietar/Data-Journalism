@@ -1,5 +1,9 @@
-Hi and Welcome on SpiderWeb's github page. 
+<b> Hi and Welcome on SpiderWeb's github page. </b>
 
-This page will provide you complete web analysis through jupyter notebooks and more ! 
+This page has been created to grant you access to all code files I'be been using for my data jouralism articles !
 
-More contents will be released later, stay tuned ! 
+Feel free to ask me any question :)
+
+
+
+
