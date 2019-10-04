@@ -10,6 +10,7 @@ data['tweet'] = data['tweet'].str.replace(r'@[A-Za-z0-9-_]+','').astype('object'
 data['tweet'] = data['tweet'].str.replace(r'https?:\/\/.*[\r\n]*', '').astype('object')
 data['tweet'] = data['tweet'].str.replace(r'\n', ' ').astype('object')
 data['tweet'] = data['tweet'].str.replace(r'#', '').astype('object')
+data['tweet'] = data['tweet'].str.replace(r'  ', '').astype('object') # remove blank fields from erased mentioned users
 
 #create a new clean csv file with 2 columns : Pandas index and tweets
 data.to_csv("your_csv_file_cleaned.csv")
