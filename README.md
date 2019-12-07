@@ -1,8 +1,10 @@
 <b> Hi and Welcome on spiderweb's github page. </b>
 
-This page has been created to grant you access to all code files I've been using for my data journalism articles !
+This page has been created to grant you access to all code files we've been using for our data journalism articles !
 
-Feel free to ask me any question :)
+Feel free to ask us any question :)
+
+ <b> <t1>Visit our blog at https://spiderweb.ghost.io/ !! </t1> </b>
 
 
 
