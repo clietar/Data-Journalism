@@ -40,11 +40,9 @@ layout = go.Layout(width=650,
 layout.update(xaxis =dict(title='Length'),
               yaxis =dict(title='Count'))
 fig = go.Figure(data=[go.Histogram(x=df['length'])], layout=layout)
-fig.update_layout(title_text="Distribution of #YelloVests tweet length")
-py.sign_in('spiderweb','meN8XQSk6p9SwNrAC740')
 py.iplot(fig, filename='Yellovest_tweet_length')
 
-
+# OPTIONAL PART FOR IMPORVING PREDICTED VALUE (more data processing with stop words)
 # process text in each line : remove ponctuations, spliting string into list of words, removing own custom stop words list
 # returning a list of words in each line (OPTIONAL :  can improve sentiment anlysis)
 
@@ -96,16 +94,5 @@ layout.update(xaxis =dict(title='Value'),
               yaxis =dict(title='Count'))
 fig = go.Figure(data=[go.Histogram(x=df['simple_classification'])], layout=layout)
 fig.update_layout(title_text="Distribution of #YellowVests classified sentiments")
-py.sign_in('spiderweb','meN8XQSk6p9SwNrAC740')
-py.iplot(fig, filename='Yellowvest_sentiment_classified')
 fig.show()
-
-df = df[df['tweet_polarity'] == 1.000000]
-df.to_csv('top_positive.csv')
-
-
-
-
-
-
 
