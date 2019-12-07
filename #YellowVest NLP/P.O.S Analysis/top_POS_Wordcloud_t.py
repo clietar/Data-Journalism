@@ -4,7 +4,7 @@ import chart_studio.plotly as py
 import plotly as py1
 import random
 
-df = pd.read_csv('top_20_ADJ.csv', names= ['Value', 'Frequency'])
+df = pd.read_csv('your_top_frequent_POS_words.csv', names= ['Value', 'Frequency'])
 
 words = list(df['Value'])
 frequency = list(df['Frequency'])
@@ -31,6 +31,4 @@ layout = go.Layout({'xaxis': {'showgrid': False, 'showticklabels': False, 'zerol
                     'yaxis': {'showgrid': False, 'showticklabels': False, 'zeroline': False}})
 
 fig = go.Figure(data=[data], layout=layout)
-fig.update_layout(title_text="Top 20 of most frequent adjectives from #YellowVests NLP Analysis ")
-py.sign_in('spiderweb','meN8XQSk6p9SwNrAC740')
-py.iplot(fig, filename='Top_20_Adjectives')
+fig.update_layout(title_text="Top 20 of most frequent 'POS' from #YellowVests NLP Analysis ")
