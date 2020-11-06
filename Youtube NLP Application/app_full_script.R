@@ -34,7 +34,7 @@ sidebar <- dashboardSidebar(
               menuItem(strong("Text Mining"),tabName = 'textmining', icon = icon("zoom-in", lib = "glyphicon")),
               menuItem(strong("Sentiment Analysis"),tabName = 'sentiment', icon = icon("smile", lib = "font-awesome"))),
   #displaying the redirection buttons to code source and technical document 
-  actionButton("button1", "Project Details",icon=icon("file-alt", lib= "font-awesome"), style = "display: inline-block; vertical-align: bottom; width: 115px ; margin-top:25px", onclick="window.open('http://google.com', '_blank')"),
+  actionButton("button1", "Project Details",icon=icon("file-alt", lib= "font-awesome"), style = "display: inline-block; vertical-align: bottom; width: 115px ; margin-top:25px", onclick="window.open('https://github.com/clietar/Data-Journalism/tree/master/Youtube%20NLP%20Application', '_blank')"),
   actionButton("button2", "Code",icon=icon("github"), style = "display: inline-block; vertical-align: bottom; width: 65px ; margin-top:25px", onclick="window.open('http://google.com', '_blank')"))
 
 
