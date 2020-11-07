@@ -18,6 +18,8 @@ Here is a short summary of the interactive analysis provided by the application 
 
 - `Text Mining Tab`: outputs the 200 most frequent words typed by users for  a video comments input, and plot them in a bar chart and a word cloud plot
 
+<img width="1269" alt="tab2" src="https://user-images.githubusercontent.com/55199729/98449134-58b05f80-2131-11eb-8bbf-9f4f5071a7f3.png">
 
 - `Sentiment Analysis Tab` :  shows the top frequent emotions in the comments (emotion classification), and a sentiment polarity analysis by showing the proportion of positive vs neutral vs negative comments. It then displays the most positive and the most negative comments.  
 
+<img width="1280" alt="tab3" src="https://user-images.githubusercontent.com/55199729/98449143-6960d580-2131-11eb-965f-27c1a22ceb65.png">
