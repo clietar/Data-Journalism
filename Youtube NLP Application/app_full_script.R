@@ -35,7 +35,7 @@ sidebar <- dashboardSidebar(
               menuItem(strong("Sentiment Analysis"),tabName = 'sentiment', icon = icon("smile", lib = "font-awesome"))),
   #displaying the redirection buttons to code source and technical document 
   actionButton("button1", "Project Details",icon=icon("file-alt", lib= "font-awesome"), style = "display: inline-block; vertical-align: bottom; width: 115px ; margin-top:25px", onclick="window.open('https://drive.google.com/file/d/10vM9Tm3R43L-RsxVd8bfFYyW4ul8Q7vx/view?usp=sharing', '_blank')"),
-  actionButton("button2", "Code",icon=icon("github"), style = "display: inline-block; vertical-align: bottom; width: 65px ; margin-top:25px", onclick="window.open('https://github.com/clietar/Data-Journalism/tree/master/Youtube%20NLP%20Application, '_blank')"))
+  actionButton("button2", "Code",icon=icon("github"), style = "display: inline-block; vertical-align: bottom; width: 65px ; margin-top:25px", onclick="window.open('https://github.com/clietar/Data-Journalism/tree/master/Youtube%20NLP%20Application', '_blank')"))
 
 
 body <- dashboardBody(
@@ -178,7 +178,7 @@ body <- dashboardBody(
     )))
 
 
-ui <- dashboardPage(title = 'Youtube Opinion Mining', header , sidebar, body)
+ui <- dashboardPage(title = 'Youtube NLP App', header , sidebar, body)
 
 
 
@@ -189,29 +189,47 @@ server = function(input, output, session) {
   ##LOADING DATA SET##
   
   #Loading raw comment datasets
-  ps5 = read.csv('raw_comments/PS5_Hardware_Reveal_Trailer.csv')
-  iphone = read.csv('raw_comments/iPHONE_12_TRAILER.csv')
-  trump = read.csv("raw_comments/Joe_Biden_and_Donald_Trump's_fiery_first_debate—Here_are_the_highlights.csv")
-  corona= read.csv('raw_comments/The_Race_To_Develop_A_Coronavirus_Vaccine.csv')
-  qanon = read.csv("raw_comments/QAnon_-_If_You_Don't_Know,_Now_You_Know_|_The_Daily_Social_Distancing_Show.csv")
-  emily = read.csv('raw_comments/Emily_in_Paris_|_Official_Trailer_|_Netflix.csv')
-  lockdown = read.csv('raw_comments/PM_announces_month-long_lockdown_in_England.csv')
-  fifa = read.csv('raw_comments/FIFA_21_|_Official_Reveal_Trailer.csv')
-  tesla=  read.csv('raw_comments/Tesla_Cybertruck_event_in_5_minutes.csv')
-  disney = read.csv('raw_comments/Start_Streaming_Now_|_Disney+.csv')
+  ps5 = read.csv('data/PS5_Hardware_Reveal_Trailer.csv')
+  iphone = read.csv('data/iPHONE_12_TRAILER.csv')
+  trump = read.csv("data/Joe_Biden_and_Donald_Trump's_fiery_first_debate—Here_are_the_highlights.csv")
+  corona= read.csv('data/The_Race_To_Develop_A_Coronavirus_Vaccine.csv')
+  qanon = read.csv("data/QAnon_-_If_You_Don't_Know,_Now_You_Know_|_The_Daily_Social_Distancing_Show.csv")
+  emily = read.csv('data/Emily_in_Paris_|_Official_Trailer_|_Netflix.csv')
+  lockdown = read.csv('data/PM_announces_month-long_lockdown_in_England.csv')
+  fifa = read.csv('data/FIFA_21_|_Official_Reveal_Trailer.csv')
+  tesla=  read.csv('data/Tesla_Cybertruck_event_in_5_minutes.csv')
+  disney = read.csv('data/Start_Streaming_Now_|_Disney+.csv')
+  
+  
+  #REMOVE : MANUAL CLEANING FOR RELEVANT TOP POSITIVE AND NEGATIVE COMMENTS 
+  ps5[94203,1] = ""
+  ps5[126577,1] =""
+  ps5[22964,1] =""
+  ps5[13119,1] =""
+  ps5[65402,1] =""
+  ps5[111064,1] =""
+  iphone[249,1] =""
+  iphone[1111,1] =""
+  disney[3436,1] =""
+  trump[8756,1] = ""
+  trump[11503,1] = ""
+  trump[3313,1] = ""
+  lockdown[1900,1] = ""
+  lockdown[457,1] = ""
+  lockdown[458,1] = ""
   
   
   #loading video stats comments 
-  ps5_stats = read.csv('video_stats/stats_ PS5_Hardware_Reveal_Trailer.csv')
-  iphone_stats = read.csv('video_stats/stats_ iPHONE_12_TRAILER.csv')
-  trump_stats = read.csv("video_stats/stats_ Joe_Biden_and_Donald_Trump's_fiery_first_debate—Here_are_the_highlights.csv")
-  corona_stats = read.csv('video_stats/stats_ The_Race_To_Develop_A_Coronavirus_Vaccine.csv')
-  qanon_stats = read.csv("video_stats/stats_ QAnon_-_If_You_Don't_Know,_Now_You_Know_|_The_Daily_Social_Distancing_Show.csv")
-  lockdown_stats = read.csv('video_stats/stats_ PM_announces_month-long_lockdown_in_England.csv')
-  emily_stats =read.csv('video_stats/stats_ Emily_in_Paris_|_Official_Trailer_|_Netflix.csv')
-  fifa_stats = read.csv('video_stats/stats_ FIFA_21_|_Official_Reveal_Trailer.csv')
-  tesla_stats = read.csv('video_stats/stats_ Tesla_Cybertruck_event_in_5_minutes.csv')
-  disney_stats = read.csv('video_stats/stats_ Start_Streaming_Now_|_Disney+.csv')
+  ps5_stats = read.csv('stats/stats_ PS5_Hardware_Reveal_Trailer.csv')
+  iphone_stats = read.csv('stats/stats_ iPHONE_12_TRAILER.csv')
+  trump_stats = read.csv("stats/stats_ Joe_Biden_and_Donald_Trump's_fiery_first_debate—Here_are_the_highlights.csv")
+  corona_stats = read.csv('stats/stats_ The_Race_To_Develop_A_Coronavirus_Vaccine.csv')
+  qanon_stats = read.csv("stats/stats_ QAnon_-_If_You_Don't_Know,_Now_You_Know_|_The_Daily_Social_Distancing_Show.csv")
+  lockdown_stats = read.csv('stats/stats_ PM_announces_month-long_lockdown_in_England.csv')
+  emily_stats =read.csv('stats/stats_ Emily_in_Paris_|_Official_Trailer_|_Netflix.csv')
+  fifa_stats = read.csv('stats/stats_ FIFA_21_|_Official_Reveal_Trailer.csv')
+  tesla_stats = read.csv('stats/stats_ Tesla_Cybertruck_event_in_5_minutes.csv')
+  disney_stats = read.csv('stats/stats_ Start_Streaming_Now_|_Disney+.csv')
   
   
   
@@ -248,7 +266,7 @@ server = function(input, output, session) {
   output$video_selector = renderUI({
     selectInput("video_selector",label = "Select Youtube Video:",
                 choices = list("Gaming"=c("PS5 Reveal Trailer","FIFA 21 Trailer"), "Tech"=c("Tesla CyberTruck fail", "Iphone 12 Unveiled"), "Streaming"=c("EmilyinParis Trailer","Disney+ announcement"), "Politics"=c('TrumpvsBiden 1st Debate','New UK Lockdown'), "Society"=c("Coronavirus Vaccine Race","QAnon Movement")),
-                selected = "Gaming", width="100%")
+                selected = "Disney+ announcement", width="100%")
   })
   
   
