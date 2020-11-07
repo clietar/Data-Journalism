@@ -7,7 +7,7 @@ The Shiny App can be consulted here: https://charles-lietar.shinyapps.io/youtube
 The technical documentation is available at: https://drive.google.com/file/d/10vM9Tm3R43L-RsxVd8bfFYyW4ul8Q7vx/view
 
 The goal of the project is to mine opinions from thousands of Youtube Comments extracted with Youtube Data API v3.
-We selected recent videos from different topics like Society, Politics, Tech, Gaming or Streaming. The subject had to trendy so we could spot debates/feedback sharings of users in the comments.
+We selected recent videos from different topics like Society, Politics, Tech, Gaming or Streaming. The subject had to be trendy so we could get various input from users  in the comments (debates, feedback sharing, personal opinions..)
 
 Here is a short summary of the interactive analysis provided by the application : 
 
