@@ -13,6 +13,7 @@ Here is a short summary of the interactive analysis provided by the application 
 
 - `Video  Summary Tab`:  provides a summary of the descriptive statistics available on video ; allows the users to play video directly in applicaiton, and displays the top 6 most liked comments
 
+<img width="1279" alt="tab1" src="https://user-images.githubusercontent.com/55199729/98449021-92cd3180-2130-11eb-853f-dbdc5903dd90.png">
 
 
 - `Text Mining Tab`: outputs the 200 most frequent words typed by users for  a video comments input, and plot them in a bar chart and a word cloud plot
