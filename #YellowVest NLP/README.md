@@ -1,6 +1,6 @@
 #  "#YellowVests"  : A Twitter NLP analysis
 
-The project was to describe the general opinion regarding the largest French protestation movement on its 1st anniversary, using Parts of Speech Analysis and Sentiment Analysis on +4000 extracted tweets.
+The project was to describe the general opinion regarding the largest French protestation movement on its 1st anniversary, using Parts of Speech Recognition and Sentiment Analysis on +4000 extracted tweets.
 
 Main questions to answer were the following : Are French people still feeling hope wearing these yellow vests? Are they expressing anger through or against this movement? Are they tired of it ?
 
