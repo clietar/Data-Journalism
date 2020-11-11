@@ -201,22 +201,7 @@ server = function(input, output, session) {
   disney = read.csv('data/Start_Streaming_Now_|_Disney+.csv')
   
   
-  #REMOVE : MANUAL CLEANING FOR RELEVANT TOP POSITIVE AND NEGATIVE COMMENTS 
-  ps5[94203,1] = ""
-  ps5[126577,1] =""
-  ps5[22964,1] =""
-  ps5[13119,1] =""
-  ps5[65402,1] =""
-  ps5[111064,1] =""
-  iphone[249,1] =""
-  iphone[1111,1] =""
-  disney[3436,1] =""
-  trump[8756,1] = ""
-  trump[11503,1] = ""
-  trump[3313,1] = ""
-  lockdown[1900,1] = ""
-  lockdown[457,1] = ""
-  lockdown[458,1] = ""
+
   
   
   #loading video stats comments 
