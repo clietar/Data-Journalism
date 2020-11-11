@@ -6,7 +6,7 @@ Main questions to answer were the following : Are French people still feeling ho
 
 You can read the article at : https://towardsdatascience.com/yellowvests-a-twitter-nlp-analysis-21f34c4773e2
 
-Contents of articles : 
+Contents of article : 
 - `Introduction`
 - `Origins, Rise and Fall of the social movement`
 - `Parts of Speech Analysis : the Data Science process`
