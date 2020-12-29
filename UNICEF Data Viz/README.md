@@ -9,7 +9,7 @@ Project Goal : Mining and presenting in a meaningful way results from the Survey
 The dashboard was also built to support UNICEF's Educational mission : "Working around the world to support quality learning for every girl and boy, especially those in greatest danger of being left behind", by highlighting facts and impacts triggered by the Covid-19 pandemic. 
 Additional data sources from UNICEF were added to illustrate certain trends (see Raw data files section). 
 
-Facts are presented across 4 educational measure areas : Access to Remote Learning - Learning contents coverage - Teacher support - Tracking student learning.
+Facts are presented across 4 educational measure areas : Access to Remote Learning - Learning contents coverage - Teacher support - Tracking student learning. The user is invited to click on circles represented the areas to navigate across the dashboard.
 
 ### Raw data files used:
 
