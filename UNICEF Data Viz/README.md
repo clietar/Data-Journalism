@@ -14,7 +14,7 @@ Facts are presented across 4 educational measure areas : Access to Remote Learni
 ### Raw data files used:
 
 - `detailed_survey_covid_responses.xlsx` : Raw survey data collected from each ministries of Education who contributed to the survey (one row = one respondant),  available here http://tcg.uis.unesco.org/wp-content/uploads/sites/4/2020/10/COVID_SchoolSurvey_R2_Data-and-Codebook.xlsx
-- - `covid_children_situation_tracking.xlsx` : country-specific dataset from UNICEF's situation tracking dashboard on covid-19 pandemic (filtered on educational fields), available at : https://data.unicef.org/resources/rapid-situation-tracking-covid-19-socioeconomic-impacts-data-viz/
+- `covid_children_situation_tracking.xlsx` : country-specific dataset from UNICEF's situation tracking dashboard on covid-19 pandemic (filtered on educational fields), available at : https://data.unicef.org/resources/rapid-situation-tracking-covid-19-socioeconomic-impacts-data-viz/
 - `attendance_nov2019.xlsx` and `completion_nov2019.xlsx` : school attendance and completion rate in November 2019 (latest datasets available before the pandemic), extracted from  UNICEF databases : https://data.unicef.org/
 - `polygones_countries.csv` : polygones shaping all countries in the world, used for plotting the globe in the dashboard 
 
