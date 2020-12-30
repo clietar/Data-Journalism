@@ -4,6 +4,10 @@
 
 ### This repository contains coding and data files used for building the Tableau dashboard available at : https://public.tableau.com/profile/charleslietar#!/vizhome/DataVizChallenge-UNICEF/AccesstoRemote
 
+
+![Screenshot 2020-12-30 at 21 49 02](https://user-images.githubusercontent.com/55199729/103380737-192b4180-4aea-11eb-88e1-fff40287c423.png)
+
+
 ### Project Goal : 
 
 Mining and presenting in a meaningful way results from the Survey on National Education Responses to COVID-19 School Closures, led by UNICEF, UNESCO and The World Bannk : http://tcg.uis.unesco.org/survey-education-covid-school-closures/. (second round of data collection)
