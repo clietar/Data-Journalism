@@ -1,4 +1,4 @@
-#  UNICEF TABLEAU DATA VIZ CHALLENGE 2020
+#  UNICEF TABLEAU DATA VIZ CHALLENGE
 
 ## Subject picked : Educational responses to covid-19-related school closures over 130+ countries  
 
