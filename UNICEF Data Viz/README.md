@@ -5,7 +5,7 @@
 ### This repository contains coding and data files used for building the Tableau dashboard available at : https://public.tableau.com/profile/charleslietar#!/vizhome/DataVizChallenge-UNICEF/AccesstoRemote
 
 
-![Screenshot 2020-12-30 at 21 49 02](https://user-images.githubusercontent.com/55199729/103380737-192b4180-4aea-11eb-88e1-fff40287c423.png)
+![Screenshot 2020-12-30 at 22 01 34](https://user-images.githubusercontent.com/55199729/103380948-9bb40100-4aea-11eb-8831-bc5297886eae.png)
 
 
 ### Project Goal : 
