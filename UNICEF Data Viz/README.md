@@ -19,7 +19,7 @@ Facts are presented across 4 educational measure areas : Access to Remote Learni
 - `polygones_countries.csv` : polygones shaping all countries in the world, used for plotting the globe in the dashboard 
 
 
-### Coding files built for processing data:
+### Code files built for processing data:
 
 - `Unicef_Data_Cleaning.ipynb`: Notebook in Python used for preparing (cleaning, joining..) raw survey data & UNICEF datasets for the dashboard. 
 - `polygones_dataset_building.R` :  R code file used for building the `polygones_countries.csv` dataset from a .shp file 
