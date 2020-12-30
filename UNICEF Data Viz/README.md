@@ -2,7 +2,7 @@
 
 ## Subject picked : Educational responses to covid-19-related school closures over 130+ countries  
 
-### This repository contains coding and data files used for building the Tableau dashboard available at : 
+### This repository contains coding and data files used for building the Tableau dashboard available at : https://public.tableau.com/profile/charleslietar#!/vizhome/DataVizChallenge-UNICEF/AccesstoRemote
 
 Project Goal : Mining and presenting in a meaningful way results from the Survey on National Education Responses to COVID-19 School Closures, led by UNICEF, UNESCO and The World Bannk : http://tcg.uis.unesco.org/survey-education-covid-school-closures/. (second round of data collection)
 
