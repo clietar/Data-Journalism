@@ -2,7 +2,7 @@
 
 ## Subject picked : Educational responses to covid-19-related school closures over 130+ countries  
 
-### This repository contains coding and data files used for building the Tableau dashboard available at : https://public.tableau.com/profile/charleslietar#!/vizhome/DataVizChallenge-UNICEF/AccesstoRemote
+### This repository contains coding and data files used for building the Tableau dashboard available at : https://public.tableau.com/profile/charleslietar#!/vizhome/DataVizChallenge-UNICEF/AccesstoRemote (CAN'T BE DISPLAYED ON A SMARTPHONE)
 
 
 ![Screenshot 2020-12-30 at 22 01 34](https://user-images.githubusercontent.com/55199729/103380948-9bb40100-4aea-11eb-8831-bc5297886eae.png)
