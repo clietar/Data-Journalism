@@ -10,7 +10,7 @@
 
 ### Project Goal : 
 
-Mining and presenting in a meaningful way results from the Survey on National Education Responses to COVID-19 School Closures, led by UNICEF, UNESCO and The World Bannk : http://tcg.uis.unesco.org/survey-education-covid-school-closures/. (second round of data collection)
+Mining and presenting in a meaningful way results from the Survey on National Education Responses to COVID-19 School Closures, led by UNICEF, UNESCO and The World Bank : http://tcg.uis.unesco.org/survey-education-covid-school-closures/. (second round of data collection)
 
 The dashboard was also built to support UNICEF's Educational mission : "Working around the world to support quality learning for every girl and boy, especially those in greatest danger of being left behind", by highlighting facts and impacts triggered by the Covid-19 pandemic. 
 Additional data sources from UNICEF were added to illustrate certain trends (see Raw data files section). 
